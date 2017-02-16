@@ -1,0 +1,5 @@
+
+
+check50 2015.fall.pset1.mario mario.c
+
+https://sandbox.cs50.net/checks/79883764535648488e343d60b207a594
