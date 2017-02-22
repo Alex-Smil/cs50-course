@@ -7,23 +7,18 @@
 int main(void)
 {
     float ch;
-    int tf = 25, ten = 10, five = 05, one = 01;//coins
+    int tf = 25, ten = 10, five = 5, one = 1;//coins
     int key, i = 0, ctf = 0, cten = 0, cfive = 0, cone = 0;
     
     printf("Hi ! How much change is owed ?\n");
-    
-    
+       
     for(key = IN; key == IN; )
     {
         //ch = GetFloat();
         scanf("%f",&ch);
-		printf("get float = %lf\n",ch);
-        ch = ch * 100;
-        printf("chf aft perevod v cent %lf\n",ch);
+		ch = ch * 100;
         ch = roundf(ch);
-        printf("chf aft perevod v okruglenie %lf\n",ch);
-        //ch = chf;
-        //scanf("%lf",&ch);
+        
         if(ch < 1)
             printf("Retry\n");
         else
@@ -118,14 +113,8 @@ int main(void)
         else if(ch < one)
             key = OUT;
     }
-    
-    
-    
-    //printf("chf af one = %.2lf\n\n",ch);
-    printf("chf af one = %lf\n\n",ch);
-    
-    
-    printf("reminder %lf, ALL COINS = %d\n\n", ch, i);
+          
+    printf("ALL COINS = %d\n\n", i);
     printf(" tf = %d;\n ten = %d;\n", ctf,cten);
     printf(" five = %d;\n one = %d;\n", cfive,cone);
     
