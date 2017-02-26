@@ -21,6 +21,7 @@ int main (int argc, char *argv[])
            k = k % 26;
         
 		argv[2] = fgets(*argv, 100, stdin);
+	        //argv[2] = GetString();// Use with cs50 library
                 
         for(i = 2; i < 3; i++)
         {
