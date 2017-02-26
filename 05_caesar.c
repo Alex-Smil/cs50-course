@@ -50,7 +50,6 @@ int main (int argc, char *argv[])
                     {
                         tmp = (tmp - 65) % 26;
                         argv[i][j] = 65 + tmp;//encrypt character
-                        
                     }
                     else 
                         argv[i][j] = argv[i][j] + k;
@@ -63,7 +62,6 @@ int main (int argc, char *argv[])
         
         return 0;
     }
-    
 }
 /*
 new functions : atoi(), 
